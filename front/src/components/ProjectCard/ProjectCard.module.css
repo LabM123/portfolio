@@ -1,0 +1,38 @@
+.CardBody{
+    display: flex;
+    padding: 2rem;
+    & .CardBodyMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(233, 233, 136)
+        }
+        p{
+            padding: 0 3rem;
+            text-align: center;
+        }
+        & .CardTechnologies{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            & a{
+                & img{
+                    width: 3rem;
+                    filter: drop-shadow(0px 0px 5px steelblue);
+                }
+            }
+        }
+    }
+    & .CardSiteImg{
+        max-width: 30rem;
+        border-radius: 1rem;
+    }
+}
+

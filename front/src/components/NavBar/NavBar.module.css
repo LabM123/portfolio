@@ -1,0 +1,47 @@
+.NavBarBody{
+    background-color: rgb(15, 15, 15);
+    height: 7vh;
+    /* min-width: 99vw; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    & .NavBarIcon{
+        min-width: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        & img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 50%;
+            width: 3rem;
+        }
+        & .NavBarIconText{
+            padding: .5rem;
+            & .NavBarIconTextRole{
+                font-size: .70rem;
+                color: rgb(233, 233, 136);
+            }
+        }
+    }
+    & .NavBarLinks{
+        display: flex;
+        justify-content: space-around;
+        min-width: 40%;
+        & a{
+            text-decoration: none;
+            color: white;
+            padding: .5rem;
+            transition: all 0.3s ease-in-out;
+        }
+        & a:hover{
+            transform: scale(1.2);
+            text-shadow: 0px 0px 11px steelblue, 0px 0px 11px steelblue, 0px 0px 11px steelblue;
+        }
+    }
+}
