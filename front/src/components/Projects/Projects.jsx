@@ -26,7 +26,9 @@ export function Projects(){
     ]
     return(
         <>
-            <h2 className={styles['ProjectsH2']} id='proyectos'>Proyectos</h2>
+        <div id="proyectos"></div>
+        <div className='projects-section'>
+            <h2 className={styles['ProjectsH2']} >Proyectos</h2>
             <div className={styles['ProjectsBody']}>
                 {proyectos.map((proyecto, index) => (
                     <ProjectCard
@@ -38,6 +40,7 @@ export function Projects(){
                     />
                 ))}
             </div>
+        </div>
         </>
     )
 }
