@@ -1,0 +1,38 @@
+.LoaderBody{
+    backdrop-filter: blur(1rem);
+    background-color: rgba(15, 10, 85, 0.24);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & .OuterRing{
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1/1;
+        /* background-color: blue; */
+        border: solid rgb(76, 76, 192) 10px;
+        border-top: rgb(183, 183, 209) solid 10px;
+        border-radius: 50%;
+        margin: 1rem;
+        display: flex;
+        padding: 1rem;
+        width: 3rem;
+        height: 3rem;
+        animation: loop 1s infinite linear;
+        /* & .InternalRing{
+            background-color: white;
+            border-radius: 50%;
+        } */
+    }
+}
+
+@keyframes loop {
+    to{
+        transform: rotateZ(360deg);
+    }
+}

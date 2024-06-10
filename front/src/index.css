@@ -75,7 +75,7 @@ table {
 	border-spacing: 0;
 }
 
-.projects-section{
+.projects-section, .education-section{
 	scale: .8;
 	opacity: 0;
 	transform: translateX(-20%);
@@ -85,20 +85,10 @@ table {
 	animation-range: entry 20% cover 35%;
 }
 
-.tech-stack-section{
+.tech-stack-section, .contact-section{
 	scale: .8;
 	opacity: 0;
 	transform: translateX(20%);
-	animation: fade-in linear auto;
-	animation-fill-mode: both;
-	animation-timeline: view();
-	animation-range: entry 20% cover 35%;
-}
-
-.education-section{
-	scale: .8;
-	opacity: 0;
-	transform: translateX(-20%);
 	animation: fade-in linear auto;
 	animation-fill-mode: both;
 	animation-timeline: view();
@@ -120,4 +110,10 @@ table {
 #formacion{
 	margin-top: 6rem;
 	scroll-margin-top: 8vh;
+}
+
+.swal2-popup {
+	background-color: #333;
+	color: #fff;
+	border-radius: 2rem;
 }

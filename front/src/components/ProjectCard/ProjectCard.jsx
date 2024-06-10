@@ -22,9 +22,9 @@ export function ProjectCard({ title, description, technologies, imageUrl}){
                         const imgIndex = allTechnologies.indexOf(technology);
                         const img = allTechnologiesImages[imgIndex];
                         return(
-                            <a href="" key={index}>
+                            <div key={index}>
                                 <img src={img} title={allTechnologies[imgIndex]} />
-                            </a>
+                            </div>
                         )
                     })}
                 </div>

@@ -12,7 +12,7 @@ export function Education() {
                     <div className={styles['EducationCardBody']}>
                         <div className={styles['EducationCardHeader']}>
                             <h3>Henry Bootcamp - Fullstack Developer</h3>
-                            <a href="https://cert.efset.org/YpdYsd">
+                            <a href="https://cert.efset.org/YpdYsd" target='_blank'>
                                 <img src={linkIcon} alt="" title='Link al certificado'/>
                             </a>
                         </div>
@@ -26,7 +26,7 @@ export function Education() {
                     <div className={styles['EducationCardBody']}>
                         <div className={styles['EducationCardHeader']}>
                             <h3>Certificado EF SET 71/100 (C2 Proficient)</h3>
-                            <a href="https://cert.efset.org/YpdYsd">
+                            <a href="https://cert.efset.org/YpdYsd" target='_blank'>
                                 <img src={linkIcon} alt="" title='Link al certificado'/>
                             </a>
                         </div>
