@@ -5,7 +5,7 @@ import { useState } from 'react';
 import closeButtonSvg from '../../assets/closeButton.svg'
 
 export function NavBar(){
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
     const toogleNavBar = () => {
         setIsOpen(!isOpen);
     }
