@@ -12,6 +12,7 @@
 .ContactBody{
     margin: auto;
     margin-bottom: 3rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
