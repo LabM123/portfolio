@@ -14,6 +14,7 @@ import gitHubIcon from '../../assets/github.svg'
 import nodeIcon from '../../assets/nodeIcon.svg'
 import npmIcon from '../../assets/npmIcon.svg'
 import vsIcon from '../../assets/vsIcon.svg'
+import bootstrapIcon from '../../assets/bootstrapIcon.svg'
 
 export function TechStack(){
     return(
@@ -38,12 +39,16 @@ export function TechStack(){
                                 <p>Javascript</p>
                             </div>
                             <div className={styles['TechCard']}>
+                                <img src={reactIcon} alt="" />
+                                <p>ReactJs</p>
+                            </div>
+                            <div className={styles['TechCard']}>
                                 <img src={tailwindIcon} alt="" />
                                 <p>Tailwind</p>
                             </div>
                             <div className={styles['TechCard']}>
-                                <img src={reactIcon} alt="" />
-                                <p>ReactJs</p>
+                                <img src={bootstrapIcon} alt="" />
+                                <p>Bootstrap</p>
                             </div>
                         </div>
                     </div>

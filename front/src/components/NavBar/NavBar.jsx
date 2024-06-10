@@ -15,7 +15,7 @@ export function NavBar(){
                 <a href="#inicio">Inicio</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#formacion">Formacion</a>
-                <a href="">Contacto</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </div>
     )

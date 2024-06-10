@@ -18,7 +18,7 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(express.json())
 
-app.get('/sendEmail', async(req, res) => {
+app.post('/sendEmail', async(req, res) => {
     try {
         let {subject, text, userEmail} = req.body
         if(!userEmail) throw new Error('Se debe enviar un correo de contacto')
