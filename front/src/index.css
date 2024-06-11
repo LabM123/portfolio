@@ -17,9 +17,24 @@
 		background-color: rgb(8, 2, 32);
 	}
 	100%{
-		background-color: rgb(15, 15, 15);
+		background-color: rgb(8, 2, 32);
 	}
 }
+
+/* @keyframes background-switch-color {
+	0%{
+		background-color: rgb(15, 15, 15);
+	}
+	33%{
+		background-color: rgb(66, 19, 43);
+	}
+	66%{
+		background-color: rgb(8, 2, 32);
+	}
+	100%{
+		background-color: rgb(63, 1, 1);
+	}
+} */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,7 +90,7 @@ table {
 	border-spacing: 0;
 }
 
-.projects-section, .education-section{
+.projects-section, .education-section, .tech-stack-section, .contact-section{
 	scale: .8;
 	opacity: 0;
 	transform: translateX(-20%);
@@ -85,7 +100,7 @@ table {
 	animation-range: entry 20% cover 35%;
 }
 
-.tech-stack-section, .contact-section{
+/* .tech-stack-section, .contact-section{
 	scale: .8;
 	opacity: 0;
 	transform: translateX(20%);
@@ -93,7 +108,7 @@ table {
 	animation-fill-mode: both;
 	animation-timeline: view();
 	animation-range: entry 20% cover 35%;
-}
+} */
 
 @keyframes fade-in {
 	to{
@@ -116,4 +131,13 @@ table {
 	background-color: #333;
 	color: #fff;
 	border-radius: 2rem;
+}
+
+@media only screen and (max-width: 1024px){
+	#proyectos{
+		scroll-margin-top: 4vh;
+	}
+	#formacion{
+		scroll-margin-top: 7vh;
+	}
 }

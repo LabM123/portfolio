@@ -92,3 +92,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 1439px){
+    .ContactH2{
+        margin-top: 2rem;
+    }
+    .ContactBody{
+        width: 80%;
+        margin-bottom: 5rem;
+        & .ContactForm{
+            & .ContactFormA{
+                flex-direction: column;
+                & div{
+                    width: 80%;
+                }
+            }
+            & .ContactFormB{
+                width: 80%;
+            }
+        }
+    }
+}

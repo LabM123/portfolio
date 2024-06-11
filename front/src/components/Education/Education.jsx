@@ -1,5 +1,6 @@
 import styles from './Education.module.css'
 import englishCert from '../../assets/englishCert.png'
+import henryCert from '../../assets/henryCert.png'
 import linkIcon from '../../assets/linkIcon.svg'
 
 export function Education() {
@@ -8,11 +9,11 @@ export function Education() {
             <h2 className={styles['EducationH2']}>Educacion y Certificaciones</h2>
             <div className={styles['EducationBody']}>
                 <div className={styles['EducationCard']}>
-                    <img src={englishCert} alt="" className={styles['EducationCardSS']}/>
+                    <img src={henryCert} alt="" className={styles['EducationCardSS']}/>
                     <div className={styles['EducationCardBody']}>
                         <div className={styles['EducationCardHeader']}>
                             <h3>Henry Bootcamp - Fullstack Developer</h3>
-                            <a href="https://cert.efset.org/YpdYsd" target='_blank'>
+                            <a href="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=dd0cd683be30e55b14c128b13e8dc73cc0337db813c6c98cbef5cafff071f7b5" target='_blank'>
                                 <img src={linkIcon} alt="" title='Link al certificado'/>
                             </a>
                         </div>

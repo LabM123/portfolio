@@ -1,6 +1,7 @@
 import styles from './Projects.module.css'
 import questieSS from '../../assets/questieSS.png'
 import proyectoPuriSS from '../../assets/proyectPuriSS.png'
+import arestaurantSS from '../../assets/arestaurantSS.png'
 import { ProjectCard } from '../ProjectCard/ProjectCard'
 
 export function Projects(){
@@ -20,8 +21,8 @@ export function Projects(){
         {
             title: 'A Restaurant',
             description: 'Una aplicacion pensada para un restaurante que quisiera contar con un sistema de reservaciones, pudiendo este proveer a la plataforma de dias inhabiles, horarios, etc.',
-            technologies: ['React', 'Express', 'PostgreSQL', 'Javascript'],
-            imageUrl: proyectoPuriSS
+            technologies: ['React', 'Express', 'PostgreSQL', 'Javascript', 'Typescript'],
+            imageUrl: arestaurantSS
         }
     ]
     return(

@@ -76,15 +76,18 @@
             display: flex;
             flex-direction: column;
             background-color: rgb(3, 3, 39);
-            width: 70%;
-            height: 100%;
-            justify-content: center;
+            width: 55%;
+            height: 100vh;
+            /* justify-content: center; */
             align-items: center;
-            padding: 3rem;
+            padding: 0 3rem;
+            padding-top: 30%;
             & img{
-                width: 6rem;
+                width: 5rem;
                 position: absolute;
                 transform: translateX(-700%) translateY(-450%);
+                transform: translateX(-150%) translateY(-500%);
+                transform: translateX(-150%) translateY(-150%);
             }
             & a{
                 width: 100%;
@@ -96,6 +99,9 @@
             }
             & a:last-child{
                 border-bottom: solid 1px rgb(23, 23, 128);
+            }
+            & a:hover{
+                background-color: rgb(23, 23, 128);
             }
         }
     }

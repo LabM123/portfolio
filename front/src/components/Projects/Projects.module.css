@@ -16,12 +16,21 @@
     border: dashed 1px rgb(43, 82, 114);
     width: 60%;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     /* gap: 2rem; */
     & > div{
         border-bottom: dashed 1px rgb(43, 82, 114);
     }
     & > div:last-child{
         border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 1439px){
+    .ProjectsH2{
+        margin-top: 0;
+    }
+    .ProjectsBody{
+        width: 88%;
     }
 }

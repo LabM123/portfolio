@@ -70,3 +70,35 @@
         border-bottom: none;
     }
 }
+
+@media only screen and (max-width: 1439px){
+    .EducationH2{
+        margin-top: 0;
+    }
+    .EducationBody{
+        width: 88%;
+        padding: 0 1rem;
+        & .EducationCard{
+            flex-direction: column;
+            width: 100%;
+            & .EducationCardSS{
+                max-width: 90%;
+            }
+            & .EducationCardBody{
+                padding: 1rem 0;
+                width: 90%;
+                & .EducationCardHeader{
+                    padding: 0;
+                    flex-direction: column;
+                    gap: 1rem;
+                    & h3{
+                        padding: 0;
+                    }
+                }
+                & .EducationCardMain{
+                    padding: 2rem 1rem 0 1rem;
+                }
+            }
+        }
+    }
+}
