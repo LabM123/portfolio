@@ -85,9 +85,8 @@
             & img{
                 width: 5rem;
                 position: absolute;
-                transform: translateX(-700%) translateY(-450%);
-                transform: translateX(-150%) translateY(-500%);
-                transform: translateX(-150%) translateY(-150%);
+                top: 0;
+                left: 0;
             }
             & a{
                 width: 100%;
@@ -96,6 +95,7 @@
                 padding: 2rem;
                 border-top: solid 1px rgb(23, 23, 128);
                 text-align: center;
+                transition: all 0.3s ease-in-out;
             }
             & a:last-child{
                 border-bottom: solid 1px rgb(23, 23, 128);
