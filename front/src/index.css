@@ -141,3 +141,18 @@ table {
 		scroll-margin-top: 7vh;
 	}
 }
+
+@supports not (animation-timeline: view()) {
+    :root {
+        animation: none;
+		background-color: rgb(8, 2, 32);
+    }
+    .projects-section, .education-section, .tech-stack-section, .contact-section {
+        animation: none;
+		animation-timeline: none;
+		animation-range: none;
+		opacity: 1;
+		transform: translateX(0);
+		scale: 1;
+    }
+}
