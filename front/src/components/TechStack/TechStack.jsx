@@ -14,6 +14,11 @@ import gitHubIcon from '../../assets/github.svg'
 import nodeIcon from '../../assets/nodeIcon.svg'
 import npmIcon from '../../assets/npmIcon.svg'
 import vsIcon from '../../assets/vsIcon.svg'
+import fastApiIcon from '../../assets/fastapiIcon.svg'
+import materialUiIcon from '../../assets/materialuiIcon.svg'
+import pythonIcon from '../../assets/pythonIcon.svg'
+import scrumIcon from '../../assets/scrumIcon.svg'
+import flaskIcon from '../../assets/flaskIcon.svg'
 import bootstrapIcon from '../../assets/bootstrapIcon.svg'
 
 export function TechStack(){
@@ -50,6 +55,14 @@ export function TechStack(){
                                 <img src={bootstrapIcon} alt="" />
                                 <p>Bootstrap</p>
                             </div>
+                            <div className={styles['TechCard']}>
+                                <img src={materialUiIcon} alt="" />
+                                <p>Material UI</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={flaskIcon} alt="" />
+                                <p>Flask</p>
+                            </div>
                         </div>
                     </div>
                     <div className={styles['BackStack']}>
@@ -79,6 +92,14 @@ export function TechStack(){
                                 <img src={postgresIcon} alt="" />
                                 <p>PostgreSQL</p>
                             </div>
+                            <div className={styles['TechCard']}>
+                                <img src={pythonIcon} alt="" />
+                                <p>Python</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={fastApiIcon} alt="" />
+                                <p>FastAPI</p>
+                            </div>
                         </div>
                     </div>
                     <div className={styles['ToolStack']}>
@@ -99,6 +120,10 @@ export function TechStack(){
                             <div className={styles['TechCard']}>
                                 <img src={npmIcon} alt="" />
                                 <p>npm</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={scrumIcon} alt="" />
+                                <p>SCRUM</p>
                             </div>
                         </div>
                     </div>
