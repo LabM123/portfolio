@@ -90,7 +90,7 @@ table {
 	border-spacing: 0;
 }
 
-.projects-section, .education-section, .tech-stack-section, .contact-section{
+.projects-section, .education-section, .tech-stack-section, .contact-section, .experience-section{
 	scale: .8;
 	opacity: 0;
 	transform: translateX(-20%);

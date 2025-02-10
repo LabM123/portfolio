@@ -3,16 +3,16 @@ import photo from '../../assets/photo.png'
 import menuIcon from '../../assets/menuButton.svg'
 import { useState } from 'react';
 import closeButtonSvg from '../../assets/closeButton.svg'
+import { Drawer } from '@mui/material';
 
 export function NavBar(){
     const [isOpen, setIsOpen] = useState(false)
-    const toogleNavBar = () => {
-        setIsOpen(!isOpen);
-    }
+    const handleCloseDrawer = () => setIsOpen(false)
+    const handleOpenDrawer = () => setIsOpen(true)
     return (
         <>
         <div className={styles['NavBarBody']}>
-            <img src={menuIcon} alt="" className={styles['MobileNavBarActivator']} onClick={toogleNavBar}/>
+            <img src={menuIcon} alt="" className={styles['MobileNavBarActivator']} onClick={handleOpenDrawer}/>
             <div className={styles['NavBarIcon']}>
                 <img src={photo} alt="" />
                 <div className={styles['NavBarIconText']}>
@@ -22,24 +22,24 @@ export function NavBar(){
             </div>
             <div className={styles['NavBarLinks']}>
                 <a href="#inicio">Inicio</a>
+                <a href="#experiencia">Experiencia</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#formacion">Formacion</a>
                 <a href="#contacto">Contacto</a>
             </div>
         </div>
-        {
-            isOpen ?
-            <div className={`${styles['MobileNavBarBody']}`} onClick={toogleNavBar}>
+        <Drawer open={isOpen} anchor='left' onClose={handleCloseDrawer}>
                 <div className={styles['MobileNavBarMain']}>
-                    <img src={closeButtonSvg} alt="" className={styles['MobileNavBarCloseButton']} onClick={toogleNavBar}/>
-                    <a href="#inicio" onClick={toogleNavBar}>Inicio</a>
-                    <a href="#proyectos" onClick={toogleNavBar}>Proyectos</a>
-                    <a href="#formacion" onClick={toogleNavBar}>Formacion</a>
-                    <a href="#contacto" onClick={toogleNavBar}>Contacto</a>
+                    <img src={closeButtonSvg} alt="" className={styles['MobileNavBarCloseButton']} onClick={handleCloseDrawer}/>
+                    <a href="#inicio" onClick={handleCloseDrawer}>Inicio</a>
+                    <a href="#experiencia" onClick={handleCloseDrawer}>Experiencia</a>
+                    <a href="#proyectos" onClick={handleCloseDrawer}>Proyectos</a>
+                    <a href="#formacion" onClick={handleCloseDrawer}>Formacion</a>
+                    <a href="#contacto" onClick={handleCloseDrawer}>Contacto</a>
                 </div>
+            <div className={styles['MobileNavBarBody']}>
             </div>
-            : null
-        }
+        </Drawer>
         </>
     )
 }

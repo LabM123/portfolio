@@ -11,7 +11,7 @@ export function HeroImg(){
                 <div className={styles['HeroImgTitle']}>
                     <p className={styles['HeroImgTitleRole']}>Fullstack Developer</p>
                     <p className={styles['HeroImgTitleName']}>Luis Alberto Becerril</p>
-                    <p className={styles['HeroImgTitleSubtitle']}>NodeJs | React | NestJs | Express</p>
+                    <p className={styles['HeroImgTitleSubtitle']}>NodeJs | React | NestJs | Python</p>
                 </div>
                 <div className={styles['HeroImgButtons']}>
                     <a href="https://www.linkedin.com/in/luis-alberto-becerril-moralez/" target='_blank'>

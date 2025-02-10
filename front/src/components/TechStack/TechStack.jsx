@@ -19,6 +19,7 @@ import materialUiIcon from '../../assets/materialuiIcon.svg'
 import pythonIcon from '../../assets/pythonIcon.svg'
 import scrumIcon from '../../assets/scrumIcon.svg'
 import flaskIcon from '../../assets/flaskIcon.svg'
+import figmaIcon from '../../assets/figmaIcon.svg'
 import bootstrapIcon from '../../assets/bootstrapIcon.svg'
 
 export function TechStack(){
@@ -120,6 +121,10 @@ export function TechStack(){
                             <div className={styles['TechCard']}>
                                 <img src={npmIcon} alt="" />
                                 <p>npm</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={figmaIcon} alt="" />
+                                <p>Figma</p>
                             </div>
                             <div className={styles['TechCard']}>
                                 <img src={scrumIcon} alt="" />
