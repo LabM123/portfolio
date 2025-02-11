@@ -9,9 +9,13 @@ import TimelineOppositeContent, {timelineOppositeContentClasses,} from '@mui/lab
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 
+import dropdownIcon from '../../assets/dropdownIcon.svg'
+import { useState } from 'react';
+
 export function Experience(){
     const experiences = [
         {
+            id: "Muhami",
             position: "Fullstack Developer",
             company: "Consultora Muhami",
             startDate: "Oct 2024",
@@ -23,6 +27,7 @@ export function Experience(){
             ]
         },
         {
+            id: "Henry",
             position: "Practicas Profesionales",
             company: "Henry Bootcamp",
             startDate: "May 2024",
@@ -34,8 +39,9 @@ export function Experience(){
             ]
         },
         {
+            id: "CCSI",
             position: "Bilingual Appointment Setter",
-            company: "Call Center Services International (CCSI)",
+            company: "CCSI",
             startDate: "Feb 2023",
             endDate: "May 2023",
             details: [
@@ -69,22 +75,66 @@ export function Experience(){
             </TimelineItem>
         ))
     }
+
+    const [isExperienceOpen, setIsExperienceOpen] = useState({})
+
+    const handleExperienceToogle = (id) => {
+        setIsExperienceOpen(prev => ({...prev, [id]: !prev[id] || false}))
+    }
+
+    const renderExperiencesMobile = () => {
+        return experiences.map((experience, index) => (
+            <div className={styles["ExperienceMobileItem"]} key={index}>
+                <div className={styles["ExperienceMobileItemMain"]} onClick={() => handleExperienceToogle(experience.id)}>
+                    <div className={styles["ExperienceMobileItemMainTitle"]}>
+                        <h3 className={styles["ExperienceMobileItemTitle"]}>{experience.position}</h3>
+                        <p className={styles["ExperienceMobileItemCompany"]}>{experience.company}</p>
+                        <p className={styles["ExperienceMobileItemDate"]}>{experience.startDate} - {experience.endDate}</p>
+                    </div>
+                    <img className={`${styles["ExperienceMobileItemDropdown"]} ${isExperienceOpen[experience.id] ? styles["dropdownOpen"] : styles["dropdownClose"]}`} src={dropdownIcon} alt="dropdown"/>
+                </div>
+                <div className={`${styles["ExperienceMobileItemDetails"]} ${isExperienceOpen[experience.id] ? styles["detailsOpen"] : styles["detailsClose"]}`}>
+                    <ul style={{fontFamily: "Poppins", listStyleType: "initial", padding: "1rem"}}>
+                        {experience.details.map((detail, index) => (
+                            <li key={index} style={{marginBlock: ".5rem", fontSize: ".9rem"}}>{detail}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        ))
+    }
+
     return (
         <>
         <div id="experiencia"></div>
         <div className="experience-section">
             <h2 className={styles["ExperienceH2"]}>Experiencia</h2>
             <div className={styles["ExperienceBody"]}>
-                <Timeline
-                    sx={{
-                        [`& .${timelineOppositeContentClasses.root}`]: {
-                            flex: 0.2,
-                        },
-                        fontFamily: 'Poppins, sans-serif',
-                    }}
-                >
-                    {renderExperiences()}
-                </Timeline>
+                <div className={styles["ExperienceDesktop"]}>
+                    <Timeline
+                        sx={{
+                            [`& .${timelineOppositeContentClasses.root}`]: {
+                                flex: 0.2,
+                            },
+                            fontFamily: 'Poppins, sans-serif',
+                        }}
+                    >
+                        {renderExperiences()}
+                    </Timeline>
+                </div>
+                <div className={styles["ExperienceMobile"]}>
+                    {/* <div className={styles["ExperienceMobileItem"]}>
+                        <div className={styles["ExperienceMobileItemMain"]}>
+                            <div className={styles["ExperienceMobileItemMainTitle"]}>
+                                <h3 className={styles["ExperienceMobileItemTitle"]}>Fullstack Developer</h3>
+                                <p className={styles["ExperienceMobileItemCompany"]}>Consultora Muhami</p>
+                                <p className={styles["ExperienceMobileItemDate"]}>Oct 2024 - Presente</p>
+                            </div>
+                            <img className={styles["ExperienceMobileItemDropdown"]} src={dropdownIcon} alt="dropdown" onClick={() => handleExperienceToogle()}/>
+                        </div>
+                    </div> */}
+                    {renderExperiencesMobile()}
+                </div>
             </div>
         </div>
         </>

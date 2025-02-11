@@ -19,11 +19,72 @@
     padding: 3rem 1rem;
 }
 
+.ExperienceMobile{
+    display: none;
+}
+
 @media only screen and (max-width: 1439px){
     .ProjectsH2{
         margin-top: 0;
     }
     .ExperienceBody{
         width: 88%;
+        padding: 1.5rem 1rem;
+        & .ExperienceDesktop {
+            display: none;
+        }
+    }
+    .ExperienceMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        & .ExperienceMobileItem{
+            & .ExperienceMobileItemMain{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-left: solid 5px rgb(208,208,122);
+                border-left: solid 5px rgb(25,118,210);
+                padding-left: 1rem;
+                & .ExperienceMobileItemMainTitle{
+                    & .ExperienceMobileItemTitle {
+                        font-size: 1rem;
+                        color: rgb(233, 233, 136);
+                    }
+                    & .ExperienceMobileItemCompany {
+                        font-size: 0.8rem;
+                        margin: .5rem 0;
+                        color: rgb(182,182,39);
+                    }
+                    & .ExperienceMobileItemDate {
+                        font-size: 0.8rem;
+                        color: rgb(25,118,210);
+                    }
+                }
+                & .ExperienceMobileItemDropdown{
+                    width: 3rem;
+                    transition: all 0.3s ease-in-out;
+                }
+                & .dropdownClose{
+                    transform: rotateZ(0deg);
+                }
+                & .dropdownOpen{
+                    transform: rotateZ(180deg);
+                }
+            }
+            & .ExperienceMobileItemDetails{
+                transition: all 0.5s ease-in-out;
+            }
+            & .detailsClose{
+                max-height: 0;
+                overflow: hidden;
+            }
+            & .detailsOpen{
+                max-height: 100vh;
+                overflow: hidden;
+            }
+        }
     }
 }
