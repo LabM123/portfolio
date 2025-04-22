@@ -18,7 +18,7 @@ export function Education() {
                             </a>
                         </div>
                         <div className={styles['EducationCardMain']}>
-                        El certificado de Full Stack Web Developer, emitido por Henry Bootcamp, acredita la finalización exitosa de un programa intensivo en desarrollo web. Este curso cubre tecnologías clave como HTML, CSS, JavaScript, React, Node.js, y bases de datos SQL y NoSQL. Los graduados han demostrado competencia en la creación de aplicaciones web modernas y la implementación de APIs RESTful.
+                        El certificado de Full Stack Web Developer, emitido por Henry Bootcamp, acredita la finalización exitosa de un programa intensivo en desarrollo web. Este curso cubre tecnologías clave como HTML, CSS, JavaScript, React, Node.js, y bases de datos SQL y NoSQL. Demostrando competencia en la creación de aplicaciones web modernas y la implementación de APIs RESTful.
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export function Education() {
                             </a>
                         </div>
                         <div className={styles['EducationCardMain']}>
-                        El certificado de Inglés C2, emitido por el EF Standard English Test (EF SET), acredita un dominio avanzado del inglés, equivalente al nivel C2 del Marco Común Europeo de Referencia para las Lenguas (MCER). Este nivel demuestra la capacidad de comprender y resumir información compleja, y expresarse de manera fluida y precisa en cualquier contexto.
+                        El certificado de Inglés nivel C2, emitido por el EF Standard English Test (EF SET), acredita un dominio avanzado del inglés, equivalente al nivel C2 del Marco Común Europeo de Referencia para las Lenguas (MCER). Este nivel demuestra la capacidad de comprender y resumir información compleja, y expresarse de manera fluida y precisa en cualquier contexto.
                         </div>
                     </div>
                 </div>

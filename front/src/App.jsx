@@ -1,6 +1,7 @@
 import { ContactForm } from "./components/ContactForm/ContactForm"
 import { Education } from "./components/Education/Education"
 import { Experience } from "./components/Experience/Experience"
+import FadeInSection from "./components/FadeInSection/FadeInSection"
 import { HeroImg } from "./components/HeroImg/HeroImg"
 import { NavBar } from "./components/NavBar/NavBar"
 import { Projects } from "./components/Projects/Projects"
@@ -12,11 +13,21 @@ function App() {
     <>
     <NavBar/>
     <HeroImg/>
-    <Experience/>
-    <Projects/>
-    <TechStack/>
-    <Education/>
-    <ContactForm/>
+    <FadeInSection>
+      <Experience/>
+    </FadeInSection>
+    <FadeInSection percentageInToShow={0.1}>
+      <Projects/>
+    </FadeInSection>
+    <FadeInSection percentageInToShow={0.1}>
+      <TechStack/>
+    </FadeInSection>
+    <FadeInSection>
+      <Education/>
+    </FadeInSection>
+    <FadeInSection>
+      <ContactForm/>
+    </FadeInSection>
     </>
   )
 }

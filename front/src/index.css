@@ -90,7 +90,7 @@ table {
 	border-spacing: 0;
 }
 
-.projects-section, .education-section, .tech-stack-section, .contact-section, .experience-section{
+/* .projects-section, .education-section, .tech-stack-section, .contact-section, .experience-section{
 	scale: .8;
 	opacity: 0;
 	transform: translateX(-20%);
@@ -98,7 +98,7 @@ table {
 	animation-fill-mode: both;
 	animation-timeline: view();
 	animation-range: entry 20% cover 35%;
-}
+} */
 
 /* .tech-stack-section, .contact-section{
 	scale: .8;
@@ -123,7 +123,6 @@ table {
 }
 
 #formacion{
-	margin-top: 6rem;
 	scroll-margin-top: 8vh;
 }
 
@@ -140,6 +139,18 @@ table {
 	#formacion{
 		scroll-margin-top: 7vh;
 	}
+}
+
+.fade-in-section {
+	opacity: 0;
+	transform: translateX(-20%);
+	transition: all 0.5s ease-in-out;
+	will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+	opacity: 1;
+	transform: none;
 }
 
 @supports not (animation-timeline: view()) {

@@ -33,7 +33,7 @@ export function Experience(){
             startDate: "May 2024",
             endDate: "Jun 2024",
             details: [
-                "Desarrolle una aplicacion web para un negocio de mudanzas utylizando React, Express, MongoDB y JWT para la autenticacion de usuarios.",
+                "Desarrolle una aplicacion web para un negocio de mudanzas utilizando React, Express, MongoDB y JWT para la autenticacion de usuarios.",
                 "Se hicieron integraciones con Google Maps para la geolocalización de los clientes y la generación de rutas para los traslados y pasarela de pagos con Mercado Pago.", 
                 "Colaboré en un equipo de desarrollo, participando en reuniones de planificación y revisión de código para garantizar la entrega de funcionalidades.", 
             ]
@@ -123,16 +123,6 @@ export function Experience(){
                     </Timeline>
                 </div>
                 <div className={styles["ExperienceMobile"]}>
-                    {/* <div className={styles["ExperienceMobileItem"]}>
-                        <div className={styles["ExperienceMobileItemMain"]}>
-                            <div className={styles["ExperienceMobileItemMainTitle"]}>
-                                <h3 className={styles["ExperienceMobileItemTitle"]}>Fullstack Developer</h3>
-                                <p className={styles["ExperienceMobileItemCompany"]}>Consultora Muhami</p>
-                                <p className={styles["ExperienceMobileItemDate"]}>Oct 2024 - Presente</p>
-                            </div>
-                            <img className={styles["ExperienceMobileItemDropdown"]} src={dropdownIcon} alt="dropdown" onClick={() => handleExperienceToogle()}/>
-                        </div>
-                    </div> */}
                     {renderExperiencesMobile()}
                 </div>
             </div>

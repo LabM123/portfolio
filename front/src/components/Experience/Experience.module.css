@@ -30,6 +30,7 @@
     .ExperienceBody{
         width: 88%;
         padding: 1.5rem 1rem;
+        margin-bottom: 3rem;
         & .ExperienceDesktop {
             display: none;
         }
