@@ -8,7 +8,7 @@ import { Projects } from "./components/Projects/Projects"
 import { TechStack } from "./components/TechStack/TechStack"
 
 function App() {
-
+  document.title = "Luis Alberto Becerril | Portfolio"
   return (
     <>
     <NavBar/>
