@@ -18,7 +18,7 @@ export function Experience(){
             id: "Muhami",
             position: "Fullstack Developer",
             company: "Consultora Muhami",
-            startDate: "Oct 2024",
+            startDate: "Jun 2024",
             endDate: "Presente",
             details: [
                 "Desarrollé una herramienta interna para una de las dos mayores televisoras del país, utilizando React, FastAPI, SQLAlchemy y Kafka en una arquitectura orientada a eventos bajo principios de Domain-Driven Design (DDD).",
