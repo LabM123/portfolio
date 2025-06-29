@@ -21,6 +21,10 @@ import scrumIcon from '../../assets/scrumIcon.svg'
 import flaskIcon from '../../assets/flaskIcon.svg'
 import figmaIcon from '../../assets/figmaIcon.svg'
 import bootstrapIcon from '../../assets/bootstrapIcon.svg'
+import awsS3Icon from '../../assets/awsS3.svg'
+import awsLambdaIcon from '../../assets/awsLambda.svg'
+import awsEC2Icon from '../../assets/awsEC2.svg'
+import kafkaIcon from '../../assets/kafkaIcon.svg'
 
 export function TechStack(){
     return(
@@ -101,6 +105,10 @@ export function TechStack(){
                                 <img src={fastApiIcon} alt="" />
                                 <p>FastAPI</p>
                             </div>
+                            <div className={styles['TechCard']}>
+                                <img src={kafkaIcon} alt="" />
+                                <p>Kafka</p>
+                            </div>
                         </div>
                     </div>
                     <div className={styles['ToolStack']}>
@@ -129,6 +137,18 @@ export function TechStack(){
                             <div className={styles['TechCard']}>
                                 <img src={scrumIcon} alt="" />
                                 <p>SCRUM</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={awsS3Icon} alt="" />
+                                <p>S3 (AWS)</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={awsLambdaIcon} alt="" />
+                                <p>Lambda (AWS)</p>
+                            </div>
+                            <div className={styles['TechCard']}>
+                                <img src={awsEC2Icon} alt="" />
+                                <p>EC2 (AWS)</p>
                             </div>
                         </div>
                     </div>

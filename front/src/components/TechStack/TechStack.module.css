@@ -32,12 +32,12 @@
                 font-size: 1.7rem;
                 color: rgb(233, 233, 136);
                 text-align: center;
-                }
-                & .TechCards{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    gap: 1rem;
+            }
+            & .TechCards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
                 justify-content: center;
                 align-items: top;
                 & .TechCard{
@@ -53,9 +53,11 @@
                         color: rgb(182, 182, 39);
                         padding: .3rem;
                         font-size: .9rem;
+                        text-align: center;
+                        text-overflow: ellipsis;
                     }
-                }
             }
+        }
     }
 }
 
@@ -67,6 +69,18 @@
         width: 80%;
         & .FrontStack, .BackStack, .ToolStack{
             max-width: 80%;
+            & .TechCards{
+                & .TechCard{
+                    & p{
+                        color: rgb(233, 233, 136);
+                        color: rgb(182, 182, 39);
+                        padding: .3rem;
+                        font-size: .71rem;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
         }
     }
 }
