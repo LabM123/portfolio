@@ -12,41 +12,53 @@ import Typography from '@mui/material/Typography';
 import dropdownIcon from '../../assets/dropdownIcon.svg'
 import { useState } from 'react';
 
-export function Experience(){
+export function Experience({ t }){
     const experiences = [
         {
-            id: "Muhami",
-            position: "Fullstack Developer",
-            company: "Consultora Muhami",
-            startDate: "Jun 2024",
-            endDate: "Presente",
+            id: "Coders Link",
+            position: t("experience.job.coders-link.position"),
+            company: t("experience.job.coders-link.company"),
+            startDate: t("experience.job.coders-link.start-date"),
+            endDate: t("experience.job.coders-link.end-date"),
             details: [
-                "Desarrollé una herramienta interna para una de las dos mayores televisoras del país, utilizando React, FastAPI, SQLAlchemy y Kafka en una arquitectura orientada a eventos bajo principios de Domain-Driven Design (DDD).",
-                "Colaboré en la traducción de requerimientos del cliente y lógica de negocio a funciones dentro de la aplicación, asegurando que el sistema cumpliera con las necesidades específicas del negocio.",
-                "Colaboré en un equipo ágil bajo metodología SCRUM, participando en sprints, dailys y retrospectivas para garantizar la entrega de funcionalidades.", 
+                t("experience.job.coders-link.responsibilities-1"),
+                t("experience.job.coders-link.responsibilities-2"),
+                t("experience.job.coders-link.responsibilities-3"),
+            ]
+        },
+        {
+            id: "Muhami",
+            position: t("experience.job.muhami.position"),
+            company: t("experience.job.muhami.company"),
+            startDate: t("experience.job.muhami.start-date"),
+            endDate: t("experience.job.muhami.end-date"),
+            details: [
+                t("experience.job.muhami.responsibilities-1"),
+                t("experience.job.muhami.responsibilities-2"),
+                t("experience.job.muhami.responsibilities-3"), 
             ]
         },
         {
             id: "Henry",
-            position: "Practicas Profesionales",
-            company: "Henry Bootcamp",
-            startDate: "May 2024",
-            endDate: "Jun 2024",
+            position: t("experience.job.henry.position"),
+            company: t("experience.job.henry.company"),
+            startDate: t("experience.job.henry.start-date"),
+            endDate: t("experience.job.henry.end-date"),
             details: [
-                "Desarrolle una aplicacion web para un negocio de mudanzas utilizando React, Express, MongoDB y JWT para la autenticacion de usuarios.",
-                "Se hicieron integraciones con Google Maps para la geolocalización de los clientes y la generación de rutas para los traslados y pasarela de pagos con Mercado Pago.", 
-                "Colaboré en un equipo de desarrollo, participando en reuniones de planificación y revisión de código para garantizar la entrega de funcionalidades.", 
+                t("experience.job.henry.responsibilities-1"),
+                t("experience.job.henry.responsibilities-2"),
+                t("experience.job.henry.responsibilities-3"),
             ]
         },
         {
             id: "CCSI",
-            position: "Bilingual Appointment Setter",
-            company: "CCSI",
-            startDate: "Feb 2023",
-            endDate: "May 2023",
+            position: t("experience.job.ccsi.position"),
+            company: t("experience.job.ccsi.company"),
+            startDate: t("experience.job.ccsi.start-date"),
+            endDate: t("experience.job.ccsi.end-date"),
             details: [
-                "Coordine soluciones de programación de viajes, atendiendo clientes que utilizaban los servicios de Lyft y Uber bajo las condiciones de su seguro.",
-                "Utilice estrategias de comunicación matizadas para proporcionar soluciones personalizadas a problemáticas respecto al funcionamiento de la plataforma.",
+                t("experience.job.ccsi.responsibilities-1"),
+                t("experience.job.ccsi.responsibilities-2"),
             ]
         },
     ] 
@@ -108,7 +120,7 @@ export function Experience(){
         <>
         <div id="experiencia"></div>
         <div className="experience-section">
-            <h2 className={styles["ExperienceH2"]}>Experiencia</h2>
+            <h2 className={styles["ExperienceH2"]}>{t('experience.title')}</h2>
             <div className={styles["ExperienceBody"]}>
                 <div className={styles["ExperienceDesktop"]}>
                     <Timeline

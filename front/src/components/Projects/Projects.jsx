@@ -2,25 +2,32 @@ import styles from './Projects.module.css'
 import questieSS from '../../assets/questieSS.png'
 import proyectoPuriSS from '../../assets/proyectPuriSS.png'
 import arestaurantSS from '../../assets/arestaurantSS.png'
+import soundsSS from '../../assets/projectSoundsSS.png'
 import { ProjectCard } from '../ProjectCard/ProjectCard'
 
-export function Projects(){
+export function Projects({ t }){
     const proyectos = [
         {
-            title: 'Questie',
-            description: 'Fue ideada como una aplicacion de aprendizaje en linea a traves de cursos, con integraciones para hacer pagos por medio de Mercado Pago y Paypal e integraciones de inteligencia artificial para un ChatBot',
+            title: t("projects.my-sounds.title"),
+            description: t("projects.my-sounds.description"),
+            technologies: ['React', 'Nest', 'PostgreSQL', 'Typescript', 'Material UI', 'AWS'],
+            imageUrl: soundsSS,
+        },
+        {
+            title: t("projects.questie.title"),
+            description: t("projects.questie.description"),
             technologies: ['Next', 'Nest', 'PostgreSQL', 'Typescript', 'Tailwind'],
             imageUrl: questieSS
         },
         {
-            title: 'Proyecto Puri',
-            description: 'La aplicacion fue ideada para un negocio con gio de purificadora de agua que facilitaria a los usuarios hacer pedidos en linea, despues de un resgitro que facilitaria la informacion de contacto a los repartidores',
+            title: t("projects.project-puri.title"),
+            description: t("projects.project-puri.description"),
             technologies: ['React', 'Express', 'MongoDB', 'Javascript'],
             imageUrl: proyectoPuriSS
         },
         {
-            title: 'A Restaurant',
-            description: 'Una aplicacion pensada para un restaurante que quisiera contar con un sistema de reservaciones, pudiendo este proveer a la plataforma de dias inhabiles, horarios, etc.',
+            title: t("projects.a-restaurant.title"),
+            description: t("projects.a-restaurant.description"),
             technologies: ['React', 'Express', 'PostgreSQL', 'Javascript', 'Typescript'],
             imageUrl: arestaurantSS
         }
@@ -29,7 +36,7 @@ export function Projects(){
         <>
         <div id="proyectos"></div>
         <div className='projects-section'>
-            <h2 className={styles['ProjectsH2']} >Proyectos</h2>
+            <h2 className={styles['ProjectsH2']}>{t("projects.title")}</h2>
             <div className={styles['ProjectsBody']}>
                 {proyectos.map((proyecto, index) => (
                     <ProjectCard

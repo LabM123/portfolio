@@ -17,6 +17,9 @@
     width: 60%;
     border-radius: 2rem;
     padding: 3rem 1rem;
+    ul li::marker {
+        color: #e9e988;
+    }
 }
 
 .ExperienceMobile{
@@ -76,6 +79,7 @@
                 }
             }
             & .ExperienceMobileItemDetails{
+                padding-left: .1rem;
                 transition: all 0.5s ease-in-out;
             }
             & .detailsClose{

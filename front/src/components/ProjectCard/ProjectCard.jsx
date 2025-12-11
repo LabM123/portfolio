@@ -8,10 +8,12 @@ import reactIcon from '../../assets/reactIcon.svg'
 import tailwindIcon from '../../assets/tailwindIcon.svg'
 import typescriptIcon from '../../assets/typescriptIcon.svg'
 import javascriptIcon from '../../assets/javascriptIcon.svg'
+import awsIcon from '../../assets/awsIcon.svg'
+import materialuiIcon from '../../assets/materialuiIcon.svg'
 
-export function ProjectCard({ title, description, technologies, imageUrl}){
-    const allTechnologies = ['Next', 'Nest', 'PostgreSQL', 'Typescript', 'Tailwind', 'Express', 'MongoDB', 'React', 'Javascript'];
-    const allTechnologiesImages = [nextIcon, nestIcon, postgresIcon, typescriptIcon, tailwindIcon, expressIcon, mongoIcon, reactIcon, javascriptIcon];
+export function ProjectCard({ title, description, technologies, imageUrl }){
+    const allTechnologies = ['Next', 'Nest', 'PostgreSQL', 'Typescript', 'Tailwind', 'Express', 'MongoDB', 'React', 'Javascript', 'AWS', 'Material UI'];
+    const allTechnologiesImages = [nextIcon, nestIcon, postgresIcon, typescriptIcon, tailwindIcon, expressIcon, mongoIcon, reactIcon, javascriptIcon, awsIcon, materialuiIcon];
     return (
         <div className={styles['CardBody']}>
             <div className={styles['CardBodyMain']}>

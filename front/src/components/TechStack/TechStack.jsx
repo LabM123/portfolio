@@ -17,7 +17,6 @@ import vsIcon from '../../assets/vsIcon.svg'
 import fastApiIcon from '../../assets/fastapiIcon.svg'
 import materialUiIcon from '../../assets/materialuiIcon.svg'
 import pythonIcon from '../../assets/pythonIcon.svg'
-import scrumIcon from '../../assets/scrumIcon.svg'
 import flaskIcon from '../../assets/flaskIcon.svg'
 import figmaIcon from '../../assets/figmaIcon.svg'
 import bootstrapIcon from '../../assets/bootstrapIcon.svg'
@@ -25,16 +24,17 @@ import awsS3Icon from '../../assets/awsS3.svg'
 import awsLambdaIcon from '../../assets/awsLambda.svg'
 import awsEC2Icon from '../../assets/awsEC2.svg'
 import kafkaIcon from '../../assets/kafkaIcon.svg'
+import linuxIcon from '../../assets/linuxIcon.svg'
 
-export function TechStack(){
+export function TechStack({ t }){
     return(
         <>
         <div id="formacion"></div>
         <div className='tech-stack-section'>
-            <h2 className={styles['TechStackH2']}>Tecnologías</h2>
+            <h2 className={styles['TechStackH2']}>{t('technologies.title')}</h2>
             <div className={styles['TechStackBody']}>
                     <div className={styles['FrontStack']}>
-                        <h3>Frontend</h3>
+                        <h3>{t('technologies.card.frontend.title')}</h3>
                         <div className={styles['TechCards']}>
                             <div className={styles['TechCard']}>
                                 <img src={htmlIcon} alt="" />
@@ -71,7 +71,7 @@ export function TechStack(){
                         </div>
                     </div>
                     <div className={styles['BackStack']}>
-                        <h3>Backend</h3>
+                        <h3>{t('technologies.card.backend.title')}</h3>
                         <div className={styles['TechCards']}>
                             <div className={styles['TechCard']}>
                                 <img src={typescriptIcon} alt="" />
@@ -112,7 +112,7 @@ export function TechStack(){
                         </div>
                     </div>
                     <div className={styles['ToolStack']}>
-                        <h3>Herramientas</h3>
+                        <h3>{t('technologies.card.tools.title')}</h3>
                         <div className={styles['TechCards']}>
                             <div className={styles['TechCard']}>
                                 <img src={vsIcon} alt="" />
@@ -135,8 +135,8 @@ export function TechStack(){
                                 <p>Figma</p>
                             </div>
                             <div className={styles['TechCard']}>
-                                <img src={scrumIcon} alt="" />
-                                <p>SCRUM</p>
+                                <img src={linuxIcon} alt="" />
+                                <p>Linux</p>
                             </div>
                             <div className={styles['TechCard']}>
                                 <img src={awsS3Icon} alt="" />
